@@ -1,0 +1,8 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+quotes:
+  path: /shout/{name}/{limit}
+  controller: App\Controller\QuoteController::getQuotes
+  defaults:
+    _format: json
